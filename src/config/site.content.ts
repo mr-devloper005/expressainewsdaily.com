@@ -2,80 +2,84 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Independent news desk',
+    tagline: 'Press & media distribution',
   },
   footer: {
-    tagline: 'Simple publishing for press-style updates',
+    tagline: 'Your wire for timely company news',
   },
   hero: {
-    badge: 'Latest updates',
-    title: ['Clear publishing, simple reading, no extra noise.'],
+    badge: 'Distribution',
+    title: ['Press Release Distribution'],
     description:
-      'A minimal article-style publishing template built for regular updates, announcements, and media distribution posts.',
+      'Send polished announcements, reach journalists and search surfaces, and keep a clean public archive that reads like a professional newswire.',
     primaryCta: {
-      label: 'Browse latest posts',
-      href: '/updates',
+      label: 'Send a Press Release',
+      href: '/register',
     },
     secondaryCta: {
-      label: 'Contact us',
-      href: '/contact',
+      label: 'Learn more',
+      href: '/about',
     },
-    searchPlaceholder: 'Search posts',
+    searchPlaceholder: 'Search releases',
     focusLabel: 'Latest',
-    featureCardBadge: 'editor note',
-    featureCardTitle: 'Recent updates appear directly on the homepage.',
+    featureCardBadge: 'Wire',
+    featureCardTitle: 'Structured releases, faster scanning.',
     featureCardDescription:
-      'The homepage works as a clean front page so new posts stay visible without decorative sections getting in the way.',
+      'Headlines, categories, and reading pages are tuned for discovery—without turning your site into a generic blog template.',
   },
   home: {
     metadata: {
-      title: 'Latest updates and newsroom posts',
+      title: 'Press release distribution & latest company news',
       description:
-        'Read the latest updates, announcements, and stories through a simple archive-first publishing experience.',
-      openGraphTitle: 'Latest updates and newsroom posts',
+        'Distribute media announcements, product launches, and public statements with ExpressA News Daily’s press archive and reader-friendly story pages.',
+      openGraphTitle: 'Press release distribution & latest company news',
       openGraphDescription:
-        'A simple publishing template for updates, announcements, and readable article pages.',
-      keywords: ['newsroom posts', 'latest updates', 'announcements', 'press articles'],
+        'A professional press wire experience: distribution positioning, scannable archives, and premium story presentation.',
+      keywords: [
+        'press release',
+        'newswire',
+        'media distribution',
+        'company announcements',
+        'PR',
+        'ExpressA News Daily',
+      ],
     },
-    introBadge: 'About',
-    introTitle: 'A quiet publishing template made for regular updates.',
+    introBadge: 'How it works',
+    introTitle: 'From profile to published release—without the busywork.',
     introParagraphs: [
-      'This template is designed for sites that publish straightforward updates and want the homepage to behave like a clean front page rather than a product landing page.',
-      'Posts are visible immediately, archives stay easy to scan, and the reading page keeps the focus on the article itself.',
-      'The interface is intentionally simple so the site feels usable, familiar, and fast to update.',
+      'ExpressA News Daily is built for teams that ship announcements often: a focused distribution story, a calm archive, and reading pages that feel editorial—not like a generic CMS theme.',
+      'The homepage highlights your latest wire items, the services you can add (translation, extra syndication, support), and the trust signals partners expect from a media-facing surface.',
     ],
-    sideBadge: 'What it prioritizes',
+    sideBadge: 'What you get',
     sidePoints: [
-      'Recent posts directly on the homepage.',
-      'Simple archive layout with sidebar search and recent items.',
-      'Readable article pages without comments or extra modules.',
-      'A publishing-first structure that stays easy to maintain.',
+      'Single primary lane for press coverage with clean headline rhythm.',
+      'Search-friendly archive with category context.',
+      'Story pages designed for long-form reading and shareability.',
     ],
     primaryLink: {
-      label: 'Open archive',
+      label: 'Browse releases',
       href: '/updates',
     },
     secondaryLink: {
-      label: 'Contact desk',
+      label: 'Contact distribution',
       href: '/contact',
     },
   },
   cta: {
-    badge: 'Get in touch',
-    title: 'Use this template when publishing regular updates matters more than visual effects.',
-    description:
-      'A straightforward layout for announcements, media coverage, partner updates, and newsroom-style content.',
+    badge: 'Grow coverage',
+    title: 'Ready to put your next story in front of the right readers?',
+    description: 'Start an account, upload your press materials, and publish to your ExpressA wire archive in minutes.',
     primaryCta: {
       label: 'Contact us',
       href: '/contact',
     },
     secondaryCta: {
-      label: 'View archive',
-      href: '/updates',
+      label: 'View pricing',
+      href: '/pricing',
     },
   },
-  taskSectionHeading: 'Latest posts',
-  taskSectionDescriptionSuffix: 'Read the newest published updates.',
+  taskSectionHeading: 'Press releases',
+  taskSectionDescriptionSuffix: 'The newest items on your newswire.',
 } as const
 
 export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'social'>, { title: string; description: string }> = {
@@ -108,8 +112,8 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest updates',
-    description: 'Read the latest published updates and announcements.',
+    title: 'Latest press releases',
+    description: 'Browse the full wire: headlines, categories, and dates.',
   },
 }
 
@@ -128,14 +132,14 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Latest updates',
+    title: 'Press release archive',
     paragraphs: [
-      'This archive is designed for straightforward publishing: regular updates, announcements, and media-style posts presented in a clean reading format.',
-      'The layout stays simple so visitors can scan headlines quickly, open stories easily, and move through the archive without distraction.',
+      'Scan the wire by recency, category, and headline. Each item opens into a full release page designed for clear reading, sharing, and follow-up.',
+      'Use search when you are looking for a name, product, or topic that appeared across your announcements.',
     ],
     links: [
       { label: 'Home', href: '/' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Search', href: '/search' },
     ],
   },
 }
