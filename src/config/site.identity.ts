@@ -1,10 +1,10 @@
 export const siteIdentity = {
   code: process.env.NEXT_PUBLIC_SITE_CODE || 'sfvh06zltv',
-  name: process.env.NEXT_PUBLIC_SITE_NAME || 'Expressainewsdaily',
-  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Independent media updates',
+  name: process.env.NEXT_PUBLIC_SITE_NAME || 'ExpressA News Daily',
+  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Press release distribution for modern media teams',
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-    'A simple newsroom-style publication for announcements, coverage, and media updates on Expressainewsdaily.',
+    'Distribute company news, product launches, and media announcements with a clear archive, strong reach signals, and reader-friendly story pages on ExpressA News Daily.',
   domain: process.env.NEXT_PUBLIC_SITE_DOMAIN || 'expressainewsdaily.com',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://expressainewsdaily.com',
   ogImage: process.env.NEXT_PUBLIC_SITE_OG_IMAGE || '/og-default.png',
